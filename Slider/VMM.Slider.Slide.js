@@ -187,7 +187,7 @@ if (typeof VMM.Slider != 'undefined') {
 		var buildSlide = function() {
 			trace("BUILDSLIDE");
 			$wrap	= VMM.appendAndGetElement(element, "<div>", "content");
-			$slide	= VMM.appendAndGetElement($wrap, "<div>");
+			$slide	= VMM.appendAndGetElement($wrap, "<div>", null, null, data);
 			
 			/* DATE
 			================================================== */

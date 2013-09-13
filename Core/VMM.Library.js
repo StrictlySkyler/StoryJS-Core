@@ -157,12 +157,12 @@ if(typeof VMM != 'undefined') {
 	}
 	
 	// ADD ELEMENT AND RETURN IT
-	VMM.appendAndGetElement = function(append_to_element, tag, cName, content) {
+	VMM.appendAndGetElement = function(append_to_element, tag, cName, content, data) {
 		var e,
 			_tag		= "<div>",
 			_class		= "",
 			_content	= "",
-			_id			= "";
+			_id			= data.uniqueid;
 		
 		if (tag != null && tag != "") {
 			_tag = tag;
@@ -181,6 +181,7 @@ if(typeof VMM != 'undefined') {
 			e = jQuery(tag);
 			
 			e.addClass(_class);
+			e.attr('id', _id);
 			e.html(_content);
 			
 			jQuery(append_to_element).append(e);
