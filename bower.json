@@ -1,6 +1,6 @@
 {
   "name": "StoryJS-Core",
-  "version": "2.26.0",
+  "version": "2.26.1",
   "dependencies": {
     "jquery": "latest"
   },
