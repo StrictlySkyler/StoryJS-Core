@@ -6,5 +6,19 @@
   },
   "devDependencies": {
     "jquery": "latest"
-  }
+  },
+  "homepage": "https://github.com/StrictlySkyler/StoryJS-Core",
+  "authors": [
+    "Skyler Brungardt <skyler.brungardt@gmail.com>"
+  ],
+  "description": "Core files for TimelineJS-UUID",
+  "main": "VMM.StoryJS.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
