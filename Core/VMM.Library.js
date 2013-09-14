@@ -162,7 +162,7 @@ if(typeof VMM != 'undefined') {
 			_tag		= "<div>",
 			_class		= "",
 			_content	= "",
-			_id			= data ? data.uniqueid : '';
+			_id			= data ? data.uniqueid : VMM.Util.unique_ID(7);
 		
 		if (tag != null && tag != "") {
 			_tag = tag;
@@ -184,7 +184,9 @@ if(typeof VMM != 'undefined') {
 			e.attr('id', _id);
 			e.html(_content);
 			
-			jQuery(append_to_element).append(e);
+			$(append_to_element).append(e);
+
+			$(document).trigger(_id, [e]);
 			
 		}
 		

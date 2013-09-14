@@ -24,7 +24,7 @@ if (typeof VMM.Slider != 'undefined') {
 		this.id			= _id;
 		
 		
-		element		=	VMM.appendAndGetElement(_parent, "<div>", "slider-item");
+		element		=	VMM.appendAndGetElement(_parent, "<div>", "slider-item", null, data);
 		
 		if (typeof data.classname != 'undefined') {
 			trace("HAS CLASSNAME");
