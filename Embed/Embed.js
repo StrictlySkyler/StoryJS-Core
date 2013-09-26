@@ -341,8 +341,7 @@ function createStoryJS(c, src) {
 			te.style.height = (storyjs_e_config.height) + 'px';
 		}
 		
-		te.setAttribute("class", embed_classname);
-		te.setAttribute("className", embed_classname); 
+		te.className += ' ' + embed_classname;
 		t.style.position = 'relative';
 	}
 	
